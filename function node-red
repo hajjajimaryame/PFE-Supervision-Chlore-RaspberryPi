@@ -1,0 +1,13 @@
+var payload = msg.payload;
+
+// object
+if (typeof payload === "object") {
+
+    msg.payload = {
+        chlore: Number(payload.chlore)
+    };
+
+    return msg;
+}
+
+return null;
